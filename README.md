@@ -19,3 +19,4 @@
 ## Stretch goals
 
 * Allow users to edit existing to-do items
+* Remove Completed Tasks
