@@ -17,8 +17,10 @@ let click = document.querySelectorAll('ul li')
 button1.addEventListener('click', function(event){
     event.preventDefault();
     let item = document.createElement('li')
+    if(submit.value !== ""){
     item.innerText = submit.value 
     toDoList.appendChild(item)
+    } else(alert("You Need to Enter A Task In Order To Submit!"))
 
     submit.value = ""
     console.log(parent)
