@@ -10,7 +10,7 @@ let button3 = document.querySelector('#button3');
 let parent = document.querySelector('ul')
 
 let click = document.querySelectorAll('ul li')
-
+let click1 = document.querySelectorAll('ul li')
 
 
 
@@ -51,5 +51,13 @@ button2.addEventListener('click', function(event){
 
 
 button3.addEventListener('click', function(event){
-    preventDefault();
+    event.preventDefault();
+    click1 = document.querySelectorAll('ul li')
+    console.log("clicked")
+    console.log(click1)
+    for(let i = 0; i < click1.length; i++){
+        console.log(click1[i])
+        click1[i].remove()
+        }
+        
 })
